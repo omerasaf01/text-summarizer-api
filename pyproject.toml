@@ -1,0 +1,19 @@
+[project]
+name = "text-summarizer"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ömer Asaf Karasu",email = "omerasafkarasu06@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "spacy (>=3.8.7,<4.0.0)",
+    "fastapi[standard] (>=0.115.12,<0.116.0)",
+    "pydantic (>=2.11.5,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
