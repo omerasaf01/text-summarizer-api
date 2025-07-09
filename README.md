@@ -9,5 +9,9 @@ This codebase uses Docker for publication.
 You can start this codebase with code above
 
 ```sh
-$ docker compose up .
+$ docker build . -t text-summarizer-api
+```
+
+```sh
+$ docker run -p 8001:8001 text-summarizer-api
 ```

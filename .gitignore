@@ -1,2 +1,2 @@
-.roseproject/
-.DS_Store
+__pycache__/
+*.lock
