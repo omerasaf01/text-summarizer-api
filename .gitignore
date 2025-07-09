@@ -1,6 +1,2 @@
-__pycache__/
-*.lock
-ui/*
-src/*
-node_modules/*
-.next/
+.roseproject/
+.DS_Store

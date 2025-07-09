@@ -1,24 +1,13 @@
-# Text Summarization
+# Text Summarization tool with SpaCY
 
-Text Summarization API with Spacy and FastAPI
+![Image from resource](/gallery/screen.png)
 
-## Installation
-
-```sh
-$ poetry Install
-```
+This codebase uses Docker for publication.
 
 ## Running
 
-```sh
-$ poetry run python -m spacy download en_core_web_sm
-```
-
-this command is going to install spacy model to your computer.
-then let's run the project
+You can start this codebase with code above
 
 ```sh
-$ poetry run fastapi dev src/app.py
+$ docker compose up .
 ```
-
-### NOTE: This project made by me only educationel purposes, you shouldn't use this code on your production environments.

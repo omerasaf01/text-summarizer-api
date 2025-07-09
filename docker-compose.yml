@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: ./summarizer-api
+      dockerfile: Dockerfile
+    container_name: text-summarizer-api
+    ports:
+      - "8001:8000"
+    environment:
+      - ENVIRONMENT=production
+    restart: unless-stopped
+
+  ui:
+    build:
+      context: ./summarizer-ui
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: http://scholarcircle/summarizer/api/
+    container_name: text-summarizer-ui
+    ports:
+      - "3001:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://scholarcircle/summarizer/api/
+    restart: unless-stopped
