@@ -38,4 +38,6 @@ COPY . /app/
 # Set the path to include our source directory
 RUN ls
 # Command to run the application
+
+EXPOSE 8001
 CMD ["uvicorn", "src.app:app", "--host", "0.0.0.0", "--port", "8001"]
