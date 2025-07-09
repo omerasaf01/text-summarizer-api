@@ -3,3 +3,4 @@ __pycache__/
 ui/*
 src/*
 node_modules/*
+.next/
